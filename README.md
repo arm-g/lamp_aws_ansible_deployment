@@ -67,7 +67,6 @@ Should look like this
 <returned_vm_ip> ansible_user= <user>
 
 [web-server:vars]
-ansible_user= <ec2-user>
 ansible_ssh_private_key_file= <path_to_key_pair_pemfile>
 ```
 To make sure that VM is created run this
