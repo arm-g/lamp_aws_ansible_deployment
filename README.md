@@ -93,7 +93,7 @@ ansible-playbook -i hosts lamp_deployment/playbook.yml
 PHP - MYSQL Connection successfully initiated
 Congrats! LAMP stack is successfully installed
 ```
-5) To terminate the created VM and remove security group created by us we need to get VM's id (`ec2_id`). ([About dynamic inventories])(https://docs.ansible.com/ansible/latest/user_guide/intro_dynamic_inventory.html)
+5) To terminate the created VM and remove security group created by us we need to get VM's id (`ec2_id`). ([About dynamic inventories](https://docs.ansible.com/ansible/latest/user_guide/intro_dynamic_inventory.html))
 ```bash
 chmod 755 ./inventory/ec2.py
 ./inventory/ec2.py
