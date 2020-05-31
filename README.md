@@ -88,7 +88,7 @@ ansible_ssh_private_key_file= <path_to_key_pair_pemfile>
 ```bash
 ansible-playbook -i hosts lamp_deployment/playbook.yml
 ```
-4) Go to `http://<returned_vm_ip>` you need to see this message if the deployment is done successfully
+4) Go to `http://<returned_vm_ip>` you need to see the folowing message if the deployment is done successfully
 ```
 PHP - MYSQL Connection successfully initiated
 Congrats! LAMP stack is successfully installed
@@ -112,7 +112,7 @@ Then run
  ansible-playbook terminate_ec2_intance.yml
 ```
 
-## Acknowledgments
+## Notes
 * Used this [lamp_ubuntu1804](https://github.com/do-community/ansible-playbooks/tree/master/lamp_ubuntu1804) git repo for LAMP deployment with some changes (added php-mysql connection healthcheck).
 * The project is done in a hurry (4-5 hours limitation) so some best practices misused
 
