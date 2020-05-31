@@ -113,7 +113,7 @@ Then run
 ```
 
 ## Notes
-* Used this [lamp_ubuntu1804](https://github.com/do-community/ansible-playbooks/tree/master/lamp_ubuntu1804) git repo for LAMP deployment with some changes (added php-mysql connection healthcheck).
+* Used [lamp_ubuntu1804](https://github.com/do-community/ansible-playbooks/tree/master/lamp_ubuntu1804) git repo for LAMP deployment with some changes (added php-mysql connection healthcheck).
 * The project is done in a hurry (4-5 hours limitation) so some best practices misused
 
 ## License
