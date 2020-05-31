@@ -17,7 +17,7 @@ Before you begin, ensure you have met the following requirements:
 To install <lamp_aws_ansible_deployment>  project
 
 On Linux:
-* Copy or
+* Copy or clone the repo
 ```bash
 git clone https://github.com/arm-g/lamp_aws_ansible_deployment.git
 ```
