@@ -60,6 +60,16 @@ The project directory should look like this. ! <hosts> file you will have in the
 ```bash
 ansible-playbook provision_ec2_instance.yml
 ```
+2) After successfully finishing, the command should return provisioned VM's `IP`. Create `hosts` file and copy that ip.
+Should look like this
+```bash
+[web-server]
+<returned_vm_ip> ansible_user= <user>
+
+[web-server:vars]
+ansible_user= <ec2-user>
+ansible_ssh_private_key_file= <path_to_key_pair_pemfile>
+```
 To make sure that VM is created run this
 ```bash
 ansible -i hosts web-server -m ping
@@ -73,16 +83,6 @@ Expected result
     "changed": false, 
     "ping": "pong"
 }
-```
-2) After successfully finishing, the command should return provisioned VM's `IP`. Create `hosts` file and copy that ip.
-Should look like this
-```bash
-[web-server]
-<returned_vm_ip> ansible_user= <user>
-
-[web-server:vars]
-ansible_user= <ec2-user>
-ansible_ssh_private_key_file= <path_to_key_pair_pemfile>
 ```
 3) Run
 ```bash
