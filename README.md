@@ -21,7 +21,7 @@ On Linux:
 ```bash
 git clone https://github.com/arm-g/lamp_aws_ansible_deployment.git
 ```
-* Get key-pair from your amazon and put it in `.boto` file in this project root
+* Get key-pair from your AWS account and put it in `.boto` file in this project root
 * Go to `provision_ec2_instance.yml` file and edit these vars
 ```
 vars:
